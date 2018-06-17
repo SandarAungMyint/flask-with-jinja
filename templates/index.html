@@ -1,0 +1,15 @@
+i<html>
+	<head><title>Flask with Jinja</title></head>
+	<body>
+		{% set name = 'Sandar Win' %}
+		{% set git_name = 'SandarAungMyint' %}
+
+		<img src="{{ url_for('static',filename='cumdy.jpg')}}">
+		<ul>		
+			<li>{{ name }}</li>
+			<li><a href="http://github.com/{{ git_name }}">GitHub</a></li>
+			<li><a href="http://SandarAungMyint.herokuapp.com/">Heroku</a></li>
+		</ul>
+
+	</body>
+</html>
